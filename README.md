@@ -1,6 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`]
+(https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-+ daisy UI
+ //daisy UI\\
++ npm i daisyui
+
+ //calendar react date range\\
++ npm install --save react-date-range date-fns
++ 
+
+//Heroicons\\
++ npm install @heroicons/react
+
+
+
 
 ///////\\\\\\\\\
 
