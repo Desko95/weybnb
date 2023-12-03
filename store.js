@@ -1,7 +1,14 @@
 import { create } from 'zustand'
 
-const useBearStore = create((set) => ({
-  bears: 0,
-  increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
-  removeAllBears: () => set({ bears: 0 }),
+const initialState = {
+  location: "",
+  dates: [new Date(), new Date()],
+  guests: 0,
+}
+
+export const useSearchStore = create((set) => ({
+  ...initialState,
+  increaseGuests: () => set((state) => ({ guests: state.guests + 1 })),
+  decreaseGuests: () => set((state) => ({ guests: state.guests - 1 })),
+  removeAllGuests: () => set({ initialState }),
 }))

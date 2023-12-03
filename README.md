@@ -1,20 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`]
+This is a 
+[Next.js](https://nextjs.org/) project 
+bootstrapped with [`create-next-app`]
 (https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
++
  //daisy UI\\  https://daisyui.com/
 + npm i daisyui
 
++
  //calendar react date range\\  https://www.npmjs.com/package/react-date-range
 + npm install --save react-date-range date-fns
-+ 
-
+  
++
 //Heroicons\\ https://heroicons.com/
 + npm install @heroicons/react
 
++
 //CLSX\\ https://www.npmjs.com/package/clsx
 + npm i clsx
 
++
+//zustandd\\ https://github.com/pmndrs/zustand
++ npm install zustand                     # or yarn add zustand or pnpm add zustand
 
++
+//react-use   \\   https://github.com/streamich/react-use
++ npm install react-use
+
++
 ///////\\\\\\\\\
 
 ## Getting Started
