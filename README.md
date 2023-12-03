@@ -57,4 +57,4 @@ npm i daisyui
 
 https://www.youtube.com/watch?v=1kON7Q9MBak
 
-53.28 min
+1:12:43 min
