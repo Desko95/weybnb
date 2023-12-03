@@ -20,15 +20,15 @@ const SearchBar = () => {
         )}
       </button>
 
-      <div>
+      <div className="dropdown dropdown-end px-4 border-r">
 
-        <label>
+        <label tabIndex={1}>
           <p className="font-bold">Dates</p>
-          <p className="text-slate-600">Select Ranged</p>
+          <p className="text-slate-600">Select Ranges</p>
         </label>
 
-        <div>
-
+        <div tabIndex={1} className="dropdown-content">
+          <p></p>
           <label>
             <p className="font-bold">Who</p>
             <p className="text-slate-600">Add Guests</p>
