@@ -6,12 +6,15 @@ import { DateRangePicker } from "react-date-range";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { useSearchStore } from "../../../store";
+//import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
-const SearchBar = () => {
+const SearchBar = ({ toggleExpanded }) => {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const locationInput = useSearchStore((state) => state.location);
   const startDate = useSearchStore((state) => state.dates[0]);
   const endDate = useSearchStore((state) => state.dates[1]);
+  const router = useRouter();
 
   const handleSelect = (ranges) => {
     useSearchStore.setState({
@@ -28,6 +31,11 @@ const SearchBar = () => {
   const handleLocationUpdate = (e) => {
     useSearchStore.setState({ location: e.target.value });
   };
+
+  const handleSearchClick = () => {
+    router.push("/search/results");
+    toggleExpanded();
+  }
 
   return (
     <div className="flex flex-row self-center justify-center rounded-full border py-2 mt-8 w-3/4">
@@ -77,13 +85,14 @@ const SearchBar = () => {
           <Counter label="Adults" />
         </div>
       </div>
-      <Link
+      <button
         href="/search/results"
+        onClick={handleSearchClick}
         className="px-4 text-white rounded-full bg-primary p-4 flex justify-center gap-3 flex-row"
       >
         <MagnifyingGlassIcon className="w-5 h-5" />
         <span>Search</span>
-      </Link>
+      </button>
     </div>
   );
 };

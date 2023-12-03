@@ -80,7 +80,7 @@ export default function Header() {
           </div>
 
           {isExpanded ? (
-            <SearchBar />
+            <SearchBar toggleExpanded={toggleExpanded} />
           ) : (
             <button onClick={toggleExpanded} className={searchContainerClasses}>
               <div className="input flex items-center border-r px-4">
