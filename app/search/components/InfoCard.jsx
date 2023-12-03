@@ -32,7 +32,7 @@ const InfoCard = ({ listing }) => {
         <p className="text-gray-600 mb-4">{listing.description}</p>
         <button
           onClick={handleFavoriteUpdate}
-          className="absolute bottom-4 right-4 p-2 z-30"
+          className="absolute bottom-1 right-4 p-2 z-30"
         >
           {isFavorite ? (
             <FilledHeartIcon className="w-5 h-5 text-primary" />
